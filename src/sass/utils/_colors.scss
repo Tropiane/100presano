@@ -1,0 +1,12 @@
+$color-background: #FFC8D0;
+// $background-secondary: #92FD70; verde pastel
+$background-secondary: #C3AACD;
+$color-secondary: #FE7573;
+$font-color: #1D121B;
+$title-color: #FE7573;
+$color-button: #FED28B;
+
+body {
+  background-image: linear-gradient(to top, #C3AACD, #c3aacde1, #c3aacdd0, #c3aacde1, #c3aacd);
+  color: $font-color;
+}

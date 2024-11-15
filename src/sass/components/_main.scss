@@ -1,0 +1,25 @@
+@use '../utils/colors' as *;
+
+.main{
+    height: max-content;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas:
+        "about"
+        "scrollText";
+        .about{
+            grid-area: about;
+            background-image: url("/images/macaronsBG.png");
+            background-repeat: no-repeat;
+            background-size:contain;
+            background-position: right;
+            height: 90vh;
+            h1{
+                text-align: left;
+            }
+        }
+        .scrollText{
+            grid-area: scrollText;
+        }
+}

@@ -1,0 +1,49 @@
+@use '../utils/colors' as *;
+.scrollText{
+    transition: .5s ease-in-out;
+    width: 90%;
+    margin: 0 auto;
+    .scrollContent{
+        border-radius: 5rem;
+        box-shadow: 0 0 1rem $color-secondary;
+        border: 1px solid $color-secondary;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "p img";
+
+        &:hover{
+            transition: .5s ease-in-out;
+            background-color: $background-secondary;
+        }
+        p{
+            justify-self: flex-end;
+            grid-area: p;
+            width: 50%;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        img{
+            transition: opacity .1s ease-in;
+            width: 50%;
+            grid-area: img;
+            justify-self: flex-start;
+
+        }
+    }
+}
+
+@keyframes degree {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

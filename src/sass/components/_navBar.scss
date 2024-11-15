@@ -1,0 +1,80 @@
+@use '../utils/colors' as *;
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  color: $font-color;
+  height: auto;
+  .logo{
+    font-size: 1rem;
+    font-weight: bold;
+
+    h2{
+      margin: 0;
+      text-transform: uppercase;
+      color: $title-color;
+      span{
+        color: $color-button;
+        animation-name: changeColor;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-direction: alternate;
+      }
+    }
+  }
+
+  .menu{
+    margin: 0;
+    padding: 0;
+
+    ul{
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      justify-content: space-between;
+      li{
+        margin: 0;
+        padding: 1rem;
+        &:hover{
+          animation-name: agrandar;
+          animation-duration: 1s;
+          background-color: $color-secondary;
+          border-radius: 5px;
+        }
+        a{
+          text-decoration: none;
+          color: $font-color;
+        }
+      }
+    }
+  }
+}
+
+@keyframes changeColor {
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+    color: #A60839;
+  }
+  100%{
+    opacity: 1;
+    color: #A60839 ;
+  }
+}
+
+@keyframes agrandar {
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.2);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
