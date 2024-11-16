@@ -1,3 +1,4 @@
+import Recetas from "./utilities/recetas"
 import ScrollText from "./utilities/scrolltext"
 
 
@@ -9,6 +10,9 @@ function Main() {
             </div>
             <div>
                 <ScrollText/>
+            </div>
+            <div>
+                <Recetas/>
             </div>
         </section>
     )

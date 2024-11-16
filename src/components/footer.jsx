@@ -6,7 +6,7 @@ function Footer() {
         <div className="footer">
             <div className='socialMedia'>
                 <h3>Follow Us</h3>
-                <a href='https://www.instagram.com/100.presano/'><FontAwesomeIcon icon={faInstagram} className='icon'/></a>
+                <a href='https://www.instagram.com/100.presano/' target='_blank'><FontAwesomeIcon icon={faInstagram} className='icon'/></a>
             </div>
         </div>
     )

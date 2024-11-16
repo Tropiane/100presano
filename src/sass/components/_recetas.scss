@@ -1,0 +1,42 @@
+@use '../utils/colors' as *;
+
+.recetas{
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+        .cardContainer{
+            width: 50%;
+            display: flex;
+            flex-direction: row;
+            gap: 4rem;
+            overflow: hidden;
+            .card{
+                    animation-name: carrusel;
+                    animation-duration: 10s;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: ease-in-out;
+                    animation-delay: 5s;
+                img{
+                    width: 200px;
+                    border-radius: 10px;
+                }
+            }
+    }
+}
+
+@keyframes carrusel {
+    0% {
+        transform: translateX(700%);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-700%);
+        opacity: 0.5;
+    }
+}

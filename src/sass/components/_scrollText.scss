@@ -3,6 +3,7 @@
     transition: .5s ease-in-out;
     width: 90%;
     margin: 0 auto;
+
     .scrollContent{
         border-radius: 5rem;
         box-shadow: 0 0 1rem $color-secondary;
@@ -36,14 +37,5 @@
             justify-self: flex-start;
 
         }
-    }
-}
-
-@keyframes degree {
-    from{
-        transform: rotate(0deg);
-    }
-    to{
-        transform: rotate(360deg);
     }
 }
