@@ -26,6 +26,25 @@
     }
 }
 
+@media screen and (max-width: 468px) {
+    .recetas{
+        .cardContainer{
+            width: 100vw;
+            .card{
+                animation-name: carrusel;
+                animation-duration: 8s;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+                animation-delay: 5s;
+            img{
+                width: 250px;
+                border-radius: 15px;
+            }
+        }
+        }
+    }
+}
+
 @keyframes carrusel {
     0% {
         transform: translateX(700%);

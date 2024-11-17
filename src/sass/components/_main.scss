@@ -16,10 +16,22 @@
             background-position: right;
             height: 90vh;
             h1{
-                text-align: left;
+                text-align: center;
             }
         }
         .scrollText{
             grid-area: scrollText;
         }
+
+    }
+@media screen and (max-width: 468px) {
+    .main{
+
+        .about{
+            background-image: url("/images/macaronsBgMobile.png");
+            background-size:auto;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
 }

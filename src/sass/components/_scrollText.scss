@@ -34,8 +34,38 @@
             transition: opacity .1s ease-in;
             width: 50%;
             grid-area: img;
-            justify-self: flex-start;
+            justify-self: center;
+        }
+    }
 
+}
+@media screen and (max-width: 468px) {
+    
+    .scrollText{
+        transition: .5s ease-in-out;
+        width: 80vw;
+        
+        .scrollContent{
+            text-align: center;
+            height: 60vh;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr auto;
+            grid-template-areas:
+                "img"
+                "p";
+            p{  
+                justify-self: center;
+                grid-area: p;
+                font-size: 1rem;
+                width: 90%;
+            }
+            img{
+                justify-self: center;
+                transition: opacity .1s ease-in;
+                width: 90%;
+                grid-area: img;
+            }
         }
     }
 }
