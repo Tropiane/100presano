@@ -32,7 +32,7 @@ function ScrollText() {
                     <img
                         id={`image-${index}`}
                         src="/images/processed_enhanced_image.png"
-                        alt=""
+                        alt="Receta Saludable"
                         style={{ opacity: opacities[index] }}
                     />
                 </div>
