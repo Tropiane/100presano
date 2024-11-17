@@ -1,5 +1,6 @@
 import Recetas from "./utilities/recetas"
 import ScrollText from "./utilities/scrolltext"
+import Social from "./utilities/social"
 
 
 function Main() {
@@ -8,12 +9,9 @@ function Main() {
             <div className="about">
                 <h1>eslogan</h1>
             </div>
-            <div>
                 <ScrollText/>
-            </div>
-            <div>
                 <Recetas/>
-            </div>
+                <Social/>
         </section>
     )
 }
