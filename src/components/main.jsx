@@ -1,7 +1,7 @@
 import Recetas from "./utilities/recetas"
+import ScrollEffect from "./utilities/scrollEffect"
 import ScrollText from "./utilities/scrolltext"
 import Social from "./utilities/social"
-
 
 function Main() {
     return (
@@ -9,7 +9,9 @@ function Main() {
             <div className="about">
                 <h1>eslogan</h1>
             </div>
-                <ScrollText/>
+                <ScrollEffect>
+                    <ScrollText/>
+                </ScrollEffect>
                 <Recetas/>
                 <Social/>
         </section>

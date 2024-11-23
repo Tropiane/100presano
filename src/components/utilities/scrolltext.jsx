@@ -4,30 +4,45 @@ function ScrollText() {
     const [opacities, setOpacities] = useState([1, 1, 1]);
 
     const handleScroll = () => {
-        const newOpacities = opacities.map((_, index) => {
+        const newOpacities = [...opacities];
+        let isUpdated = false;
+
+        newOpacities.forEach((_, index) => {
             const imgElement = document.getElementById(`image-${index}`);
             if (imgElement) {
                 const rect = imgElement.getBoundingClientRect();
                 const fadePoint = window.innerHeight * 1.7;
                 const newOpacity = Math.max((fadePoint - rect.top) / fadePoint, 0);
-                return newOpacity;
+
+                if (newOpacity !== newOpacities[index]) {
+                    newOpacities[index] = newOpacity;
+                    isUpdated = true;
+                }
             }
-            return 1;
         });
-        setOpacities(newOpacities);
+
+        if (isUpdated) {
+            setOpacities(newOpacities);
+        }
     };
 
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
     }, [opacities]);
 
     return (
-        <div className="scrollText">
+        <div className="scrollText" id="about">
             {[...Array(3)].map((_, index) => (
                 <div key={index} className="scrollContent">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem itaque totam repellat praesentium reiciendis veniam ducimus, ullam obcaecati
-                    commodi veritatis ipsa, consequatur quisquam consequuntur et sunt! Dolor commodi eveniet vitae quia fugiat deleniti. Ipsam alias beatae, iure aliquid sit rerum?
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem itaque totam repellat
+                        praesentium reiciendis veniam ducimus, ullam obcaecati commodi veritatis ipsa, consequatur
+                        quisquam consequuntur et sunt! Dolor commodi eveniet vitae quia fugiat deleniti. Ipsam alias
+                        beatae, iure aliquid sit rerum?
                     </p>
                     <img
                         id={`image-${index}`}

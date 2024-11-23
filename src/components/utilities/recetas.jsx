@@ -7,19 +7,19 @@ function Recetas() {
             <h1>¡Recetas Vegetarianas!</h1>
             <div className="cardContainer">
                 <div className="card"> 
-                    <img src="/images/hamburger.jpg" alt="Nombre de receta" />
+                    <img src="/images/hamburger.webp" alt="Nombre de receta" />
                 </div>
                 <div className="card"> 
-                    <img src="/images/hamburger.jpg" alt="Nombre de receta" />
+                    <img src="/images/hamburger.webp" alt="Nombre de receta" />
                 </div>
                 <div className="card"> 
-                    <img src="/images/hamburger.jpg" alt="Nombre de receta" />
+                    <img src="/images/hamburger.webp" alt="Nombre de receta" />
                 </div>
                 <div className="card"> 
-                    <img src="/images/hamburger.jpg" alt="Nombre de receta" />
+                    <img src="/images/hamburger.webp" alt="Nombre de receta" />
                 </div>
                 <div className="card"> 
-                    <img src="/images/hamburger.jpg" alt="Nombre de receta" />
+                    <img src="/images/hamburger.webp" alt="Nombre de receta" />
                 </div>
             </div>
         </div>

@@ -3,7 +3,6 @@
     transition: .5s ease-in-out;
     width: 90%;
     margin: 0 auto;
-
     .scrollContent{
         border-radius: 5rem;
         box-shadow: 0 0 1rem $color-secondary;
@@ -44,7 +43,9 @@
     .scrollText{
         transition: .5s ease-in-out;
         width: 80vw;
-        
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
         .scrollContent{
             text-align: center;
             height: 60vh;
