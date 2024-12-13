@@ -1,0 +1,17 @@
+[
+    {
+        "id": 0,
+        "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem itaque totam repellat",
+        "image": "/images/processed_enhanced_image.png"
+    },
+    {
+        "id": 1,
+        "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem itaque totam repellat",
+        "image": "/images/processed_enhanced_image.png"
+    },
+    {
+        "id": 2,
+        "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem itaque totam repellat",
+        "image": "/images/processed_enhanced_image.png"
+    },
+];

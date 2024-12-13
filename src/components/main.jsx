@@ -1,3 +1,4 @@
+import Form from "./utilities/form"
 import Recetas from "./utilities/recetas"
 import ScrollEffect from "./utilities/scrollEffect"
 import ScrollText from "./utilities/scrolltext"
@@ -14,6 +15,8 @@ function Main() {
                 </ScrollEffect>
                 <Recetas/>
                 <Social/>
+                <Form/>
+
         </section>
     )
 }

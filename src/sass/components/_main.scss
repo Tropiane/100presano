@@ -24,9 +24,28 @@
         }
 
     }
+
+@media screen and (max-width: 768px) {
+    .main{
+        height: max-content;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
+        grid-template-areas:
+            "about"
+            "scrollText";
+        .about{
+            background-image: url("/images/macaronsBG.webp");
+            background-repeat: no-repeat;
+            background-size:contain;
+            background-position: left;
+            height: 90vh;
+        }
+    }
+    
+}    
 @media screen and (max-width: 468px) {
     .main{
-
         .about{
             background-image: url("/images/macaronsBgMobile.webp");
             background-size:auto;
