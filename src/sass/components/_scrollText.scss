@@ -28,12 +28,19 @@
             width: 50%;
             text-align: center;
             font-size: 1.5rem;
+            border-radius: 5rem;
+            box-shadow: 0 0 1rem $color-button;
+            padding: 1rem;
         }
         img{
             transition: opacity .1s ease-in;
             width: 50%;
             grid-area: img;
             justify-self: center;
+            animation-name: spinnerColor;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
         }
     }
 
@@ -66,7 +73,34 @@
                 transition: opacity .1s ease-in;
                 width: 90%;
                 grid-area: img;
+                animation-name: spinnerColor;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
             }
         }
+    }
+}
+
+@keyframes spinnerColor {
+    0%{
+        border: 3px solid $color-button;
+        border-radius: 50%;
+    }
+    25%{
+        border: 3px solid $color-secondary;
+        border-radius: 20%;
+    }
+    50%{
+        border: 3px solid $color-button;
+        border-radius: 50%;
+    }
+    75%{
+        border: 3px solid $color-secondary;
+        border-radius: 20%;
+    }
+    100%{
+        border: 3px solid $color-button;
+        border-radius: 50%;
     }
 }
