@@ -1,13 +1,46 @@
-$color-background: #FFC8D0;
-// $background-secondary: #92FD70; verde pastel
-$background-secondary: #C3AACD;
-$color-secondary: #FE7573;
-$font-color: #1D121B;
-$title-color: #FE7573;
-$color-button: #FED28B;
+$color-background: #FDFFFF;
+$background-secondary: #FFFFFF;
+$color-secondary: #B3DE81;
+$font-color: #0F1B07;
+$title-color: #68A225;
+$color-button: #265C00;
 
 body {
-  background-image: linear-gradient(to top, #C3AACD, #c3aacde1, #c3aacdd0, #c3aacde1, #c3aacd);
+  background-color: #FFFFFF;
   color: $font-color;
   content-visibility: auto;
 }
+
+// Verano
+// $color-background: #FDFFFF;
+// $background-secondary: #FFFFFF;
+// $color-secondary: #B3DE81;
+// $font-color: #0F1B07;
+// $title-color: #68A225;
+// $color-button: #265C00;
+
+//Invierno
+// ____________________
+// $color-background: #626D71;
+// $background-secondary: #CDCDC0;
+// $color-secondary: #DDBC95;
+// $font-color: #0F1B07;
+// $title-color: #Af7D57;
+// $color-button: #B38867;
+
+// Otoño
+// $color-background: #FFC8D0;
+// $background-secondary: #C3AACD;
+// $color-secondary: #FE7573;
+// $font-color: #1D121B;
+// $title-color: #FE7573;
+// $color-button: #FED28B;
+
+//Primavera
+// ____________________
+// $color-background: #FFFFFF;
+// $background-secondary: #e7e7e7;
+// $color-secondary: #5C821A;
+// $font-color: #0F1B07;
+// $title-color: #5C821A;
+// $color-button: #C6D166;
