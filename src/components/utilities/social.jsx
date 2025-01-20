@@ -15,9 +15,11 @@ function Social(){
       }, []);
     
       return (
+        <div className="socialMedia">
+
         <blockquote
           className="instagram-media"
-          data-instgrm-permalink="https://www.instagram.com/p/CSfUCQWFI6_/?utm_source=ig_embed&amp;utm_campaign=loading"
+          data-instgrm-permalink="https://www.instagram.com/cpnutricion/"
           data-instgrm-version="14"
           style={{
             background: "#FFF",
@@ -47,6 +49,7 @@ function Social(){
             Ver esta publicación en Instagram
           </a>
         </blockquote>
+        </div>
       );
 }
 

@@ -46,7 +46,7 @@ function ScrollText() {
                     </p>
                     <img
                         id={`image-${index}`}
-                        src="/images/processed_enhanced_image.png"
+                        src="../../../public/images/macaronsBG.webp"
                         alt="Receta Saludable"
                         style={{ opacity: opacities[index] }}
                     />

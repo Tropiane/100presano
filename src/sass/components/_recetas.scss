@@ -30,6 +30,13 @@
     .recetas{
         .cardContainer{
             width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            gap: 4rem;
+            overflow: hidden;
+            justify-content: center;
+            align-items: center;
             .card{
                 animation-name: carrusel;
                 animation-duration: 8s;
@@ -37,7 +44,7 @@
                 animation-timing-function: ease-in-out;
                 animation-delay: 5s;
             img{
-                width: 250px;
+                width: 50vh;
                 border-radius: 15px;
             }
         }
