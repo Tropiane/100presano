@@ -2,17 +2,17 @@ const recetas = [
     {
         "id": 0,
         "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem itaque totam repellat",
-        "image": "../../../public/images/macaronsBG.webp"
+        "image": "/images/macaronsBG.webp"
     },
     {
         "id": 1,
         "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem itaque totam repellat",
-        "image": "../../../public/images/macaronsBG.webp"
+        "image": "/images/macaronsBG.webp"
     },
     {
         "id": 2,
         "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem itaque totam repellat",
-        "image": "../../../public/images/macaronsBG.webp"
+        "image": "/images/macaronsBG.webp"
     }
 ]
 

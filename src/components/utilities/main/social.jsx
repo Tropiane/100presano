@@ -16,7 +16,7 @@ function Social(){
     
       return (
         <div className="socialMedia">
-
+        <h2>Y mucho mas en instagram</h2>
         <blockquote
           className="instagram-media"
           data-instgrm-permalink="https://www.instagram.com/cpnutricion/"

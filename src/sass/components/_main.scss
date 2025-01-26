@@ -10,7 +10,6 @@
         "scrollText";
         .about{
             grid-area: about;
-            background-image: url("/images/macaronsBG.webp");
             background-repeat: no-repeat;
             background-size:contain;
             background-position: right;
@@ -60,10 +59,6 @@
             "about"
             "scrollText";
         .about{
-            background-image: url("/images/macaronsBG.webp");
-            background-repeat: no-repeat;
-            background-size:contain;
-            background-position: left;
             height: 90vh;
         }
     }
@@ -72,10 +67,7 @@
 @media screen and (max-width: 468px) {
     .main{
         .about{
-            background-image: url("/images/macaronsBgMobile.webp");
-            background-size:auto;
-            background-repeat: no-repeat;
-            background-position: center;
+            height: 90vh;
         }
     }
 }

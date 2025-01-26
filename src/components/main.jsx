@@ -1,14 +1,15 @@
-import Form from "./utilities/form"
-import Recetas from "./utilities/recetas"
+import Form from "./utilities/main/form"
+import Recetas from "./utilities/main/recetas"
 import ScrollEffect from "./utilities/scrollEffect"
 import ScrollText from "./utilities/scrolltext"
-import Social from "./utilities/social"
+import Social from "./utilities/main/social"
+import Presentation from "./utilities/main/presentation"
 
 function Main() {
     return (
         <section className="main">
             <div className="about">
-                <h1>eslogan</h1>
+                <Presentation/>
             </div>
                 <ScrollEffect>
                     <ScrollText/>

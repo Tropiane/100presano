@@ -1,13 +1,15 @@
 @use '../utils/colors' as *;
 
 .recetas{
-    height: auto;
+    margin-top: 10rem;
+    height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
         .cardContainer{
             width: 50%;
+            height: 100%;
             display: flex;
             flex-direction: row;
             gap: 4rem;
@@ -19,7 +21,7 @@
                     animation-timing-function: ease-in-out;
                     animation-delay: 5s;
                 img{
-                    width: 200px;
+                    height: 200px;
                     border-radius: 10px;
                 }
             }

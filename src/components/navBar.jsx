@@ -3,6 +3,13 @@ import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
+const links = [
+    { name: 'Home', link: '#' },
+    { name: 'About', link: '#about' },
+    { name: 'Services', link: '#' },
+    { name: 'Contact', link: '#footer' },
+]
+
 function NavBar() {
     const [open, setOpen] = useState(false)
 
@@ -32,10 +39,11 @@ function NavBar() {
                             transition={{ duration: 0.3 }}
                             >
                             <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#about">About</a></li>
-                                <li><a href="#">Services</a></li>
-                                <li><a href="#footer">Contact</a></li>
+                                {links.map((link) => (
+                                    <li key={link.name}>
+                                        <a href={link.link}>{link.name}</a>
+                                    </li>
+                                ))}
                             </ul>
                         </motion.ul>
                     )}

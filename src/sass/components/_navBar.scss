@@ -5,6 +5,7 @@ nav{
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
+  margin: 0px 9rem;
   color: $font-color;
   height: auto;
   .logo{
@@ -36,8 +37,9 @@ nav{
       list-style: none;
       justify-content: space-between;
       li{
-        margin: 0;
+        margin-right: 2rem;
         padding: 1rem;
+        border-right: 1px solid $color-button;
         &:hover{
           animation-name: agrandar;
           animation-duration: 1s;
