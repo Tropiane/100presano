@@ -15,11 +15,11 @@
             gap: 4rem;
             overflow: hidden;
             .card{
-                    animation-name: carrusel;
-                    animation-duration: 10s;
-                    animation-iteration-count: infinite;
-                    animation-timing-function: ease-in-out;
-                    animation-delay: 5s;
+                animation-name: carrusel;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+                animation-delay: 5s;
                 gap: 2rem;
                 img{
                     height: 200px;
@@ -36,25 +36,22 @@
             height: 100vh;
             display: flex;
             flex-direction: row;
-            gap: 4rem;
             overflow: hidden;
-            justify-content: space-between;
             align-items: center;
+            justify-content: center;
             .card{
+                width: 300px;
                 animation-name: carrusel;
                 animation-duration: 8s;
                 animation-iteration-count: infinite;
                 animation-timing-function: ease-in-out;
+                border: 1px solid $color-button;
                 animation-delay: 5s;
-                display: flex;
-                flex-direction: row;
-                gap: 4rem;
-                justify-content: center;
-            img{
-                width: 200px;
-                border-radius: 15px;
+                img{
+                    border-radius: 10px;
+                    width: 100%;
+                }
             }
-        }
         }
     }
 }
