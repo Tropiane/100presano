@@ -20,6 +20,7 @@
                     animation-iteration-count: infinite;
                     animation-timing-function: ease-in-out;
                     animation-delay: 5s;
+                gap: 2rem;
                 img{
                     height: 200px;
                     border-radius: 10px;
@@ -37,7 +38,7 @@
             flex-direction: row;
             gap: 4rem;
             overflow: hidden;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
             .card{
                 animation-name: carrusel;
@@ -45,8 +46,12 @@
                 animation-iteration-count: infinite;
                 animation-timing-function: ease-in-out;
                 animation-delay: 5s;
+                display: flex;
+                flex-direction: row;
+                gap: 4rem;
+                justify-content: center;
             img{
-                width: 50vh;
+                width: 200px;
                 border-radius: 15px;
             }
         }
