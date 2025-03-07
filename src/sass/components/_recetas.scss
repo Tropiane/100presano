@@ -1,55 +1,70 @@
 @use '../utils/colors' as *;
 
-.recetas{
+.recetas {
     margin-top: 10rem;
     height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-        .cardContainer{
-            width: 50%;
-            height: 100%;
-            display: flex;
-            flex-direction: row;
-            gap: 4rem;
-            overflow: hidden;
-            .card{
-                animation-name: carrusel;
-                animation-duration: 10s;
-                animation-iteration-count: infinite;
-                animation-timing-function: ease-in-out;
-                animation-delay: 5s;
-                gap: 2rem;
-                img{
-                    height: 200px;
-                    border-radius: 10px;
-                }
+
+    .cardContainer {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 4rem;
+        overflow: hidden;
+
+        .card {
+            animation-name: carrusel;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-delay: 5s;
+            gap: 2rem;
+
+            img {
+                height: 100%; /* Ajustar la altura al contenedor */
+                width: 100%; /* Ajustar el ancho al contenedor */
+                object-fit: cover; /* Ajustar imagen manteniendo la proporción */
+                border-radius: 10px;
             }
+        }
     }
 }
 
 @media screen and (max-width: 468px) {
-    .recetas{
-        .cardContainer{
-            width: 100vw;
-            height: 100vh;
+    .recetas {
+        text-align: center;
+        width: 100vw;
+        height: 100vh;
+
+        .cardContainer {
+            width: auto;
+            height: 50%;
             display: flex;
             flex-direction: row;
             overflow: hidden;
             align-items: center;
             justify-content: center;
-            .card{
-                width: 300px;
+            gap: 2rem;
+
+            .card {
+                height: 50%;
+                width: auto;
                 animation-name: carrusel;
                 animation-duration: 8s;
                 animation-iteration-count: infinite;
                 animation-timing-function: ease-in-out;
                 border: 1px solid $color-button;
                 animation-delay: 5s;
-                img{
+
+                img {
                     border-radius: 10px;
-                    width: 100%;
+                    width: 80vw; /* Ajustar el ancho al contenedor */
+                    height: auto; /* Ajustar la altura al contenedor */
+                    object-fit: cover; /* Ajustar imagen manteniendo la proporción */
                 }
             }
         }
@@ -58,7 +73,7 @@
 
 @keyframes carrusel {
     0% {
-        transform: translateX(700%);
+        transform: translateX(500%);
         opacity: 0;
     }
     50% {
@@ -66,7 +81,7 @@
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-700%);
+        transform: translateX(-500%);
         opacity: 0.5;
     }
 }
