@@ -1,0 +1,26 @@
+@use '../utils/colors' as *;
+
+.presentation{
+    h1{
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 700;
+        margin: 1rem 0;
+        animation: changeColor 4s infinite;
+        span{
+            color: $color-button;
+        }
+    }
+}
+
+@keyframes changeColor {
+    0% {
+      color: $color-button;
+    }
+    50% {
+      color: $title-color;
+    }
+    100% {
+      color: $color-button;
+    }
+  }

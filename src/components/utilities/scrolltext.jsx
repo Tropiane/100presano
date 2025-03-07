@@ -1,55 +1,31 @@
-import { useEffect, useState } from 'react';
+const cards = [
+    {
+        src: 'images/michael-dam-mEZ3PoFGs_k-unsplash.jpg',
+        alt: 'Imagen 1',
+        contenido: 'lorem ipsum dolor sit amet consectetur adipiscing elit',
+        class: 'derecha'
+    },
+    {
+        src: 'images/michael-dam-mEZ3PoFGs_k-unsplash.jpg',
+        alt: 'Imagen 2',
+        contenido: 'lorem ipsum dolor sit amet consectetur adipiscing elit',
+        class: 'izquierda'
+    },
+    {
+        src: 'images/michael-dam-mEZ3PoFGs_k-unsplash.jpg',
+        alt: 'Imagen 3',
+        contenido: 'lorem ipsum dolor sit amet consectetur adipiscing elit',
+        class: 'derecha'
+    }
+];
 
 function ScrollText() {
-    const [opacities, setOpacities] = useState([1, 1, 1]);
-
-    const handleScroll = () => {
-        const newOpacities = [...opacities];
-        let isUpdated = false;
-
-        newOpacities.forEach((_, index) => {
-            const imgElement = document.getElementById(`image-${index}`);
-            if (imgElement) {
-                const rect = imgElement.getBoundingClientRect();
-                const fadePoint = window.innerHeight * 1.7;
-                const newOpacity = Math.max((fadePoint - rect.top) / fadePoint, 0);
-
-                if (newOpacity !== newOpacities[index]) {
-                    newOpacities[index] = newOpacity;
-                    isUpdated = true;
-                }
-            }
-        });
-
-        if (isUpdated) {
-            setOpacities(newOpacities);
-        }
-    };
-
-    useEffect(() => {
-        window.addEventListener('scroll', handleScroll);
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, [opacities]);
-
     return (
         <div className="scrollText" id="about">
-            {[...Array(3)].map((_, index) => (
-                <div key={index} className="scrollContent">
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem itaque totam repellat
-                        praesentium reiciendis veniam ducimus, ullam obcaecati commodi veritatis ipsa, consequatur
-                        quisquam consequuntur et sunt! Dolor commodi eveniet vitae quia fugiat deleniti. Ipsam alias
-                        beatae, iure aliquid sit rerum?
-                    </p>
-                    <img
-                        id={`image-${index}`}
-                        src="/images/michael-dam-mEZ3PoFGs_k-unsplash.jpg"
-                        alt="Receta Saludable"
-                        style={{ opacity: opacities[index] }}
-                    />
+            {cards.map((card, index) => (
+                <div key={index} className='scrollContent'>
+                    <p>{card.contenido}</p>
+                    <img src={card.src} alt={card.alt} />
                 </div>
             ))}
         </div>

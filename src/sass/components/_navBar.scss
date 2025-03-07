@@ -16,6 +16,7 @@ nav{
       margin: 0;
       text-transform: uppercase;
       color: $title-color;
+      font-size: 3rem;
       span{
         color: $color-button;
         animation-name: changeColor;
@@ -40,6 +41,7 @@ nav{
         margin-right: 2rem;
         padding: 1rem;
         border-right: 1px solid $color-button;
+        font-size: 1.5rem;
         &:hover{
           animation-name: agrandar;
           animation-duration: 1s;

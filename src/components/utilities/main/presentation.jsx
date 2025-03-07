@@ -1,4 +1,5 @@
 import Carrusel from "./carrusel"
+import {Apple} from "lucide-react";
 
 const imgs = [
     [{
@@ -33,7 +34,7 @@ function Presentation() {
     return (
         <div className="presentation" id='presentation'>
             <Carrusel images={imgs}/>
-            <h1>Siempre Sano</h1>
+            <h1><span>CP</span> Nutrición <span><Apple/></span></h1>
         </div>
     )
 }

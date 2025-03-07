@@ -1,28 +1,32 @@
 @use '../utils/colors' as *;
 
-.main{
-    height: max-content;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr auto;
-    grid-template-areas:
-        "about"
-        "scrollText";
-        .about{
-            grid-area: about;
-            background-repeat: no-repeat;
-            background-size:contain;
-            background-position: right;
-            height: 90vh;
-            h1{
-                text-align: center;
+@media screen and (min-width: 1024px) {
+    .main{
+        height: max-content;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
+        grid-template-areas:
+            "about"
+            "scrollText";
+            .about{
+                grid-area: about;
+                background-repeat: no-repeat;
+                background-size:contain;
+                background-position: right;
+                height: 90vh;
+                h1{
+                    text-align: center;
+                    font-size: 3rem;
+                }
             }
-        }
-        .scrollText{
-            grid-area: scrollText;
-        }
-
+            .scrollText{
+                grid-area: scrollText;
+            }
+    
     }
+    
+}
 
 @media screen and (max-width: 768px) {
     .main{
