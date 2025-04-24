@@ -1,7 +1,8 @@
 @use '../utils/colors' as *;
-
-nav{
-  display: flex;
+@media screen and (min-width: 1024px) {
+  
+  nav{
+    display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
@@ -14,8 +15,9 @@ nav{
 
     h2{
       margin: 0;
-      text-transform: uppercase;
-      color: $title-color;
+      text-transform:capitalize;
+      font-family: cursive;
+      color: black;
       font-size: 3rem;
       span{
         color: $color-button;
@@ -57,12 +59,95 @@ nav{
   }
 
 }
+}
+
+@media screen and (max-width: 1024px) {  
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin: 0px 5rem;
+    color: $font-color;
+    height: auto;
+
+    .logo{
+      font-size: 1rem;
+      font-weight: bold;
+
+      h2{
+        margin: 0;
+        text-transform:capitalize;
+        font-family: cursive;
+        color: black;
+        font-size: 2rem;
+        span{
+          color: $color-button;
+          animation-name: changeColor;
+          animation-duration: 3s;
+          animation-iteration-count: infinite;
+          animation-timing-function: ease-in-out;
+          animation-direction: alternate;
+        }
+      }
+    }
+
+    .menu{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      ul{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        justify-content: space-between;
+        margin-top: 1rem;
+        li{
+          margin-right: 2rem;
+          padding: 1rem;
+          border-right: 1px solid $color-button;
+          font-size: 1.5rem;
+
+          &:hover{
+            animation-name: agrandar;
+            animation-duration: 1s;
+            background-color:$color-secondary ;
+            border-radius: 5px;
+
+          }
+          a{
+            text-decoration:none ;
+            color:$font-color ;
+          }
+        }
+      }
+    }
+  }
+  
+}
 
 @media screen and (max-width: 468px) {
+
   nav{
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    .logo{
+      font-size: 1rem;
+      font-weight: bold;
+      h2{
+        margin: 0;
+        text-transform:capitalize;
+        font-family: cursive;
+        color: black;
+        font-size: 1rem;
+        span{
+          color: $color-button;
+        }
+      }
+    }
+
     .menu{
       display: flex;
       flex-direction: column;

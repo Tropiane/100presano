@@ -21,7 +21,7 @@ function Recetas() {
     return (
     <>
         <div className="recetas">
-            <h1>¡Recetas Vegetarianas!</h1>
+            <h1>Un recetario extenso aquí</h1>
             <div className="cardContainer">
                     {recetas.map((receta) => (
                         <div className="card" key={receta.id}>

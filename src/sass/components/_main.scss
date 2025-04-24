@@ -38,7 +38,11 @@
             "about"
             "scrollText";
         .about{
+            grid-area: about;
             height: 90vh;
+        }
+        .scrollText{
+            grid-area: scrollText;
         }
     }
     

@@ -1,56 +1,29 @@
 @use '../utils/colors' as *;
+
 .formContainer{
-    @media screen and (min-width: 1024px) {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 1rem;
-        margin: 2rem 0;
-        iframe{
-            border: 2px solid $color-button;
-            border-radius: 10px;
-            padding: 5px;
-        }
-    }
-
-}
-
-@media screen and (max-width: 768px) {
-    .formContainer{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h2{
+        color: $font-color;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        background-color: $color-button;
+        padding: 1rem;
+        border-radius: 1rem;
+        width: 70vw;
         text-align: center;
-        gap: 1rem;
-        margin: 2rem 0;    
-        iframe{
-            border: 2px solid $color-button;
-            border-radius: 10px;
-            padding: 5px;
-            width: 100%;
+        transition: .2s;
+        a{
+            color: $font-color;
+            text-decoration: none;
+            font-weight: bold;
         }
-    }
-}
-
-@media screen and (max-width: 425px) {
-    .formContainer{
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 1rem;
-        margin: 2rem 0;
-        text-align: center;
-        iframe{
-            border: 2px solid $color-button;
-            border-radius: 10px;
-            padding: 5px;
-            width: 90%;
-            height: 90vh;
+        &:hover{
+            background-color: $color-secondary;
+            transition: 0.5s;
+            padding: 1.5rem;
+            cursor: pointer;
         }
     }
 }

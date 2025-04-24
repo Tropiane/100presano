@@ -1,46 +1,83 @@
 @use '../utils/colors' as *;
-.scrollText{
-    transition: .5s ease-in-out;
-    width: auto;
-    margin: 0 0;
-    .scrollContent{
-        border-radius: 5rem;
-        height: 100vh;
+
+@media screen and (min-width: 1024px){
+    .scrollText{
+        transition: .5s ease-in-out;
+        width: auto;
+        margin: 0 0;
+        .scrollContent{
+            border-radius: 5rem;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr;
+            grid-template-areas:
+                "p img";
+    
+            &:hover{
+                transition: .5s ease-in-out;
+                background-color: $background-secondary;
+            }
+            p{
+                justify-self: flex-end;
+                grid-area: p;
+                width: 50%;
+                text-align: center;
+                font-size: 1.5rem;
+                border-radius: 5rem;
+                padding: 1rem;
+            }
+            img{
+                transition: opacity .1s ease-in;
+                width: auto;
+                grid-area: img;
+                justify-self: center;
+                height: 95vh;
+                margin: 5vh;
+                border-radius: 10px;
+                box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+            }
+        }
+    
+    }
+}
+@media screen and (max-width: 768px) {
+    .scrollText{
+        transition: .5s ease-in-out;
+        width: 100vw;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr;
-        grid-template-areas:
-            "p img";
-
-        &:hover{
-            transition: .5s ease-in-out;
-            background-color: $background-secondary;
-        }
-        p{
-            justify-self: flex-end;
-            grid-area: p;
-            width: 50%;
+        .scrollContent{
             text-align: center;
-            font-size: 1.5rem;
-            border-radius: 5rem;
-            padding: 1rem;
-        }
-        img{
-            transition: opacity .1s ease-in;
-            width: auto;
-            grid-area: img;
-            justify-self: center;
-            height: 95vh;
-            margin: 5vh;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr auto;
+            grid-template-areas:
+                "img"
+                "p";
+            p{  
+                margin: 0;
+                justify-self: center;
+                grid-area: p;
+                font-size: 1.5rem;
+                width: 90%;
+            }
+            img{
+                margin: 0;
+                justify-self: center;
+                align-self: center;
+                transition: opacity .1s ease-in;
+                height: 70vh;
+                grid-area: img;
+                border-radius: 10px;
+            }
         }
     }
-
 }
 @media screen and (max-width: 468px) {
     
@@ -70,7 +107,7 @@
                 justify-self: center;
                 align-self: center;
                 transition: opacity .1s ease-in;
-                height: 50vh;
+                height: 80vh;
                 grid-area: img;
                 border-radius: 10px;
             }

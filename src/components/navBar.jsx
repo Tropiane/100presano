@@ -25,7 +25,7 @@ function NavBar() {
             <>
             <nav>
                 <div className="logo">
-                    <h2><span>100</span>Presano</h2>
+                    <h2><span>CP</span> Nutrición</h2>
                 </div>
 
                 <div className="menu">
@@ -57,7 +57,7 @@ function NavBar() {
         <>
         <nav>
             <div className="logo">
-                <h2><span>100</span>Presano</h2>
+                <h2><span>CP</span>Nutrición</h2>
             </div>
 
             <div className="menu">
